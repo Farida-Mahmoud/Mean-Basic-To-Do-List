@@ -1,0 +1,14 @@
+<h1>MEAN Stack Basic To-Do List App</h1>
+<h3>Studio Metz - Startup</h3>
+<p><strong>Posted at:</strong> 18-12-2025</p>
+
+<hr />
+
+<input type="text" [(ngModel)]="newTodo" placeholder="Enter a to-do" />
+<button (click)="addTodo()">Add</button>
+
+<ul>
+  <li *ngFor="let todo of todos">
+    {{ todo.text }}
+  </li>
+</ul>
